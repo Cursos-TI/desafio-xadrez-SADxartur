@@ -1,0 +1,42 @@
+#include  <stdio.h>
+
+void movertorre(int casa){
+     if (casa > 0)
+     movertorre(casa - 1);
+     printf("direita\n");
+     
+   }
+    
+
+void moverbispo(int casa){
+    if(casa > 0)
+    moverbispo(casa - 1);
+   printf("cima\n");
+   printf("direita\n");
+   }
+
+void moverrainha(int casa){
+     if (casa > 0)
+    moverrainha(casa - 1);
+   printf("esquerda\n");
+}
+
+int main(){
+   movertorre(4);
+   printf("//////////////////\n");
+   moverbispo(4);
+   printf("//////////////////\n");
+   moverrainha(4);
+   printf("//////////////////\n");
+
+   
+ for(int cima = 1 ; cima <= 2; cima++){
+    for(int direita = 1; direita <= 2; direita++){
+      printf("cima\n");
+      printf("direita\n");
+   }
+   printf("//////////////////\n");
+} 
+}  
+
+
